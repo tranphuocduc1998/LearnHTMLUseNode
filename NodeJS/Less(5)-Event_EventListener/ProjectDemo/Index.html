@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang Index</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center h3">
+            Thực Hiện Event Listener
+        </div>
+
+        <div class="border border-dark">
+            <div class="text-center align-items-center h4 m-3">
+                Form Login
+            </div>
+            <!-- Xây dựng Form login và sử dụng Event Listener -->
+            <div class="row">
+                <div class="col-md-4 offset-4">
+                    <form id="loginForm" class="form-login">
+                        <h4>Page Login.</h4>
+                        <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                        </br>
+                        <div id="userNameAlert">
+
+                        </div>
+                        <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                        </br>
+                        <div id="userPasswordAlert">
+
+                        </div>
+                        <div class="wrapper">
+                            <span class="group-btn">     
+                            <button class="btn btn-primary btn-md" id="loginButton">
+                                login 
+                                <i class="fa fa-sign-in">
+                                </i>
+                            </button>
+                            <button id="clearButton" class="btn btn-primary btn-md">
+                                    Clear 
+                                    <i class="fa fa-sign-in">
+                                    </i>
+                            </button>
+                            </span>
+                            <div id="loginAlert">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- ------------------------------------------------ -->
+            <div class="text-center align-items-center h4 m-3">
+                Tìm kiếm với sự kiện keyup trong EventListener
+            </div>
+            <!-- lọc danh sách tìm kếm với sự kiện keyup -->
+            <div class="row">
+                <div class="col-md-6 border-dark border-right">
+                    <ul id="userList">
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="searchInput" placeholder="Search by phone number..." />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Load Jquery trước khi sử dụng bootstrap-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html?>

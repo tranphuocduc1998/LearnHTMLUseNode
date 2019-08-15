@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang Hosting firebase</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center h3">
+            thực hiện Event Onlick
+        </div>
+        <div class="border border-dark">
+            <!-- Front hiển thị Onlick đếm -->
+            <div>
+                <div class="text-center h4 m-3 align-items-center">
+                    Onlick tăng biến đếm
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center align-items-center border-dark border-right">
+                        <p id='countId'></p>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary" id="btn_Count">
+                        Button Count
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Front thực hiện thêm vào List, Clear List và Clear Input -->
+            <div>
+                <div class="text-center h4 m-3 align-items-center">
+                    Thực hiện thêm vào List, Clear List và Clear Input
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center align-items-center border-dark border-right">
+                        <p style="font-size: 20px">List được thêm vào</p>
+                        <ul id="ulIdList">
+                        </ul>
+                    </div>
+                    <div class="col-md-6 align-items-center">
+                        <input type="text" id="inputIdList" placeholder="Add...">
+                        <button class="btn btn-primary" id="add_List">
+                            Add List
+                        </button>
+                        <button class="btn btn-primary" id="clear_List">
+                            Clear List
+                        </button>
+                        <button class="btn btn-primary" id="clear_Input">
+                            clear Input
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="text-center h4 m-3 align-items-center">
+                    Alert thực hiện Say Hello, Name
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center align-items-center border-dark border-right">
+                        <div id="alertId">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-items-center">
+                        <input type="text" id="inputIdName" placeholder="Enter your name">
+                        <button class="btn btn-primary" id="btn_SayHello">
+                                Say Hello!
+                            </button>
+                        <button class="btn btn-primary" id="clear_InputName">
+                                clear Input
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Load Jquery trước khi sử dụng bootstrap-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html?>

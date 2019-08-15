@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang demo source code NodeJs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="h3 text-center">Thực hiện AJAX</div>
+        <div class="h4">Load dữ liệu bằng axios</div>
+        <div id='AjaxData'>
+
+        </div>
+    </div>
+    <div class="m-5">
+        
+    </div>
+    <div class="container">
+        <div class="text-center h3">
+            Sử dụng json-server để tạo dữ liệu và axios load dữ liệu
+        </div>
+        <div class="border border-dark">
+            <!-- Front thực hiện thêm vào List, Clear List và Clear Input -->
+            <div>
+                <div class="text-center h4 m-3 align-items-center">
+                    Thực hiện thêm vào List, Clear List và Clear Input
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center align-items-center border-dark border-right">
+                        <p style="font-size: 20px">List được thêm vào</p>
+                        <ul id="ulIdList">
+                        </ul>
+                    </div>
+                    <div class="col-md-6 align-items-center">
+                        <input type="text" id="inputIdList" placeholder="Add...">
+                        <button class="btn btn-primary" id="add_List">
+                            Add List
+                        </button>
+                        <button class="btn btn-primary" id="clear_List">
+                            Clear List
+                        </button>
+                        <button class="btn btn-primary" id="clear_Input">
+                            clear Input
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Load Jquery trước khi sử dụng bootstrap-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <!-- Load scrip axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html?>

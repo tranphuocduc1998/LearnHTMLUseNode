@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang Index</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>
+                Tìm hiểu các method của document
+            </h1>
+        </div>
+        <div class="row border border-black text-center align-items-center">
+            <div class="col-md-6 font-weight-bold border-right">
+                getElementById
+            </div>
+            <div class="col-md-6" id="nameId">
+                document.getElementById('nameId')
+            </div>
+        </div>
+
+        <div class="row border border-black text-center align-items-center">
+            <div class="col-md-6 font-weight-bold border-right">
+                getElementsByClassName
+            </div>
+            <div class="col-md-6">
+                <div class="nameClass">
+                    document.getElementsByClassName('nameClass')[0]
+                </div>
+                <div class="nameClass">
+                    document.getElementsByClassName('nameClass')[1]
+                </div>
+                <div class="nameClass">
+                    document.getElementsByClassName('nameClass')[2]
+                </div>
+            </div>
+        </div>
+
+        <div class="row border border-black text-center align-items-center">
+            <div class="col-md-6 font-weight-bold border-right">
+                getElementsByTagName
+            </div>
+            <div class="col-md-6">
+                <p>
+                    document.getElementsByTagName('p')[0]
+                </p>
+                <p>
+                    document.getElementsByTagName('p')[1]
+                </p>
+                <p>
+                    document.getElementsByTagName('p')[2]
+                </p>
+            </div>
+        </div>
+
+        <div class="row border border-black text-center align-items-center">
+            <div class="col-md-6 font-weight-bold border-right">
+                querySelector
+            </div>
+            <div class="col-md-6">
+                <div id="nameIdSelector">
+                    document.querySelector('#nameIdSelector') // name Id: #name
+                </div>
+                <div class="nameClassSelector">
+                    document.querySelector('.nameClassSelector') // name Class : .name
+                </div>
+            </div>
+        </div>
+
+        <div class="row border border-black text-center align-items-center">
+            <div class="col-md-6 font-weight-bold border-right">
+                querySelectorAll
+            </div>
+            <div class="col-md-6">
+                <div id="nameIdSelectorAll">
+                    document.querySelectorAll('#nameIdSelectorAll')
+                </div>
+                <div id="nameIdSelectorAll">
+                    document.querySelectorAll('#nameIdSelectorAll')
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Load Jquery trước khi sử dụng bootstrap-->
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html?>
